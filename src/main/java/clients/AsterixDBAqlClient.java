@@ -15,7 +15,7 @@ import org.apache.http.util.EntityUtils;
 import structures.Query;
 
 public class AsterixDBAqlClient extends AbstractAsterixDBClient {
-    private final static int ASTX_QUERY_PORT = 19002;
+    private final static int ASTX_QUERY_PORT = 18002;
     private final static String ASTX_QUERY_URL_SUFFIX = "/query";
 
     static PrintWriter pw; //stats writer
