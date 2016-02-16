@@ -52,6 +52,7 @@ public class AsterixDBAqlClient extends AbstractAsterixDBClient {
             System.out.println("\nStarting iteration " + i);
             for (String nextQ : qSeq) {
                 Query q = idToQuery.get(nextQ);
+                System.out.println("\nStarting query " + q);
                 long rspt = executeQuery(q);
                 pw.println(i + "\t" + q.getName() + "\t" + rspt);
                 System.out.println("Query " + q.getName() + " took " + rspt + " ms");
