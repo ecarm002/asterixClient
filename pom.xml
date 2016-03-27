@@ -45,6 +45,10 @@
                                     <mainClass>clients.AsterixDBAqlClient</mainClass>
                                     <name>asterix-aql-client</name>
                                 </program>
+                                <program>
+                                    <mainClass>clients.AsterixDBAqlLoadClient</mainClass>
+                                    <name>asterix-aql-load-client</name>
+                                </program>
                             </programs>
                             <repositoryLayout>flat</repositoryLayout>
                             <repositoryName>lib</repositoryName>

@@ -16,7 +16,7 @@ import structures.Query;
 
 public class AsterixDBAqlClient extends AbstractAsterixDBClient {
     private final static int ASTX_QUERY_PORT = 18002;
-    private final static String ASTX_QUERY_URL_SUFFIX = "/query";
+    private final static String ASTX_QUERY_URL_SUFFIX = "/aql";
 
     static PrintWriter pw; //stats writer
     static PrintWriter rw; //results writer (if requested)
@@ -65,7 +65,7 @@ public class AsterixDBAqlClient extends AbstractAsterixDBClient {
 
     private static long executeQuery(Query q) {
         String content = null;
-        long rspTime = -1L; //initial value
+        long rspTime = -1L; // initial value
         try {
             roBuilder.setParameter("query", q.getBody());
             URI uri = roBuilder.build();

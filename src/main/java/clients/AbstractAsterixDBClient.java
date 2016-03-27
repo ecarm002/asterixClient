@@ -47,7 +47,7 @@ public abstract class AbstractAsterixDBClient {
         }
     }
 
-    private static void loadQuery(File f) {
+    protected static void loadQuery(File f) {
         try {
             String qPath = f.getAbsolutePath();
             String qName = f.getName();
